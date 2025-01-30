@@ -1,23 +1,46 @@
 import {
-    mobile,
-    backend,
-    creator,
-    cloud,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    //redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    java,
-    postgresql,
+  //logo,
+  java,
+  backend,
+  //creator,
+  mobile,
+  web,
+  //github,
+  //menu,
+  //close,
+  cloud,
+  css,
+  postgresql,
+  docker,
+  figma,
+  git,
+  html,
+  javascript,
+  mongodb,
+  nodejs,
+  reactjs,
+  //redux,
+  tailwind,
+  typescript,
+  //threejs,
+  //meta,
+  //shopify,
+  //starbucks,
+  //tesla,
+  //carrent,
+  //jobit,
+  //tripguide,
+  tensorflow,  // Add TensorFlow to the export
+  pytorch,     // Add PyTorch to the export
+  aws,         // Add AWS to the export
+  azure,       // Add Microsoft Azure to the export
+  //c,           // Add C to the export
+  cpp,         // Add C++ to the export
+  //csharp,      // Add C# to the export
+  python,      // Add Python to the export
+  //php,         // Add PHP to the export
+  //arduino,     // Add Arduino to the export
+  //esp32,
 } from "../assets";
 
 export const navLinks = [
@@ -55,13 +78,13 @@ const services = [
 ];
 
 const technologies = [
+    //{
+    //    name: "HTML 5",
+    //    icon: html,
+    //},
     {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
+        name: "PYTHON",
+        icon: python,
     },
     {
         name: "JavaScript",
@@ -104,98 +127,27 @@ const technologies = [
         icon: git,
     },
     {
-        name: "Figma",
-        icon: figma,
+        name: "C++",
+        icon: cpp,
     },
     {
         name: "TensorFlow",
-        icon: mobile, // Replace with a proper icon for TensorFlow
+        icon: tensorflow,
     },
     {
         name: "PyTorch",
-        icon: mobile, // Replace with a proper icon for PyTorch
+        icon: pytorch,
     },
     {
         name: "Microsoft Azure",
-        icon: creator, // Replace with a proper icon
+        icon: azure,
     },
     {
         name: "AWS",
-        icon: creator, // Replace with a proper icon for AWS
-    },
-    {
-        name: "C",
-        icon: mobile, // Replace with a proper icon
-    },
-    {
-        name: "C++",
-        icon: mobile, // Replace with a proper icon
-    },
-    {
-        name: "C#",
-        icon: mobile, // Replace with a proper icon
-    },
-    {
-        name: "Java",
-        icon: java,
-    },
-    {
-        name: "Python",
-        icon: mobile, // Replace with a proper icon
-    },
-    {
-        name: "PHP",
-        icon: mobile, // Replace with a proper icon
-    },
-    {
-        name: "MIPS",
-        icon: mobile, // Replace with a proper icon
-    },
-    {
-        name: "Flutter",
-        icon: mobile, // Replace with a proper icon for Flutter
-    },
-    {
-        name: "ASP.NET",
-        icon: mobile, // Replace with a proper icon for ASP.NET
-    },
-    {
-        name: "JEE",
-        icon: mobile, // Replace with a proper icon for JEE
-    },
-    {
-        name: "Symfony",
-        icon: mobile, // Replace with a proper icon for Symfony
-    },
-    {
-        name: "Bootstrap",
-        icon: mobile, // Replace with a proper icon for Bootstrap
-    },
-    {
-        name: "UML",
-        icon: mobile, // Replace with a proper icon for UML
-    },
-    {
-        name: "PL/SQL",
-        icon: mobile, // Replace with a proper icon for PL/SQL
-    },
-    {
-        name: "MySQL",
-        icon: postgresql, // You can change the icon to a more specific one for MySQL
-    },
-    {
-        name: "Oracle",
-        icon: mobile, // Replace with a proper icon for Oracle
-    },
-    {
-        name: "Arduino",
-        icon: mobile, // Replace with a proper icon for Arduino
-    },
-    {
-        name: "ESP32",
-        icon: mobile, // Replace with a proper icon for ESP32
+        icon: aws,
     },
 ];
+
 
 const experiences = [
     {

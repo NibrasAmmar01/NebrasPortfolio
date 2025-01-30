@@ -22,6 +22,18 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import java from "./tech/java.png";
 import postgresql from "./tech/postgresql.png";
+import tensorflow from "./tech/tensorflow.jpg";  // Add a TensorFlow icon
+import pytorch from "./tech/pytorch.png";      // Add a PyTorch icon
+import aws from "./tech/aws.jpg";              // Add an AWS icon
+import azure from "./tech/azure.jpg";          // Add a Microsoft Azure icon
+import c from "./tech/c.png";                  // Add a C icon
+import cpp from "./tech/cpp.jpg";              // Add a C++ icon
+import csharp from "./tech/csharp.jpg";        // Add a C# icon
+import python from "./tech/python.jpg";        // Add a Python icon
+import php from "./tech/php.jpg";              // Add a PHP icon
+import arduino from "./tech/arduino.jpg";      // Add an Arduino icon
+import esp32 from "./tech/esp32.png";          // Add an ESP32 icon
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -63,4 +75,15 @@ export {
   carrent,
   jobit,
   tripguide,
+  tensorflow,  // Add TensorFlow to the export
+  pytorch,     // Add PyTorch to the export
+  aws,         // Add AWS to the export
+  azure,       // Add Microsoft Azure to the export
+  c,           // Add C to the export
+  cpp,         // Add C++ to the export
+  csharp,      // Add C# to the export
+  python,      // Add Python to the export
+  php,         // Add PHP to the export
+  arduino,     // Add Arduino to the export
+  esp32,       // Add ESP32 to the export
 };
