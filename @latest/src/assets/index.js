@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import cloud from "./cloud.png";
+import cloud from "./cloud.jpg";
 import Messaging from "./Messaging.jpg"
 import Deployments from "./Deployments.jpg"
 import Order from "./Order.jpg"

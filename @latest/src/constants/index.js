@@ -46,7 +46,8 @@ import {
   Order, 
   azureArchitecture, 
   stock, 
-  JEE
+  JEE,
+  creator
 } from "../assets";
 
 export const navLinks = [
@@ -79,7 +80,7 @@ const services = [
     },
     {
         title: "Cloud Infrastructure Learner",
-        icon: cloud,
+        icon: creator,
     },
 ];
 
@@ -128,10 +129,10 @@ const technologies = [
         name: "Docker",
         icon: docker,
     },
-    {
-        name: "Git",
-        icon: git,
-    },
+    //{
+    //    name: "Git",
+    //    icon: git,
+    //},
     {
         name: "C++",
         icon: cpp,
