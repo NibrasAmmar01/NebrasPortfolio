@@ -5,6 +5,7 @@ import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import PropTypes from 'prop-types';
 
 const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
   return (
@@ -23,6 +24,30 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
             alt={name}
             className='w-full hfull object-cover rounded-2xl'
           />
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            <div
+              onClick={() => window.open(source_code_link, "_blank")
+              }
+              className="black-gradient w-10 h-10 rounded-full flex justify-center cursor-pointer"
+            >
+              <img 
+                src={github}
+                alt='github'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+          </div>
+        </div>
+        <div className='mt-5'>
+          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+        </div>
+        <div className='mt-4 flex flex-wrap gap-2'>
+          {tags.map((tag) => (
+            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+              #{tag.name}
+            </p>
+          ))}
         </div>
       </Tilt>
     </motion.div>
@@ -49,7 +74,20 @@ const Works = () => {
         ))}
       </div>
     </>
-  )
-}
+  );
+};
+ProjectCard.propTypes = {
+  index: PropTypes.number.isRequired, // index is required and should be a number
+  name: PropTypes.string.isRequired, // name is required and should be a string
+  description: PropTypes.string.isRequired, // description is required and should be a string
+  tags: PropTypes.arrayOf(
+      PropTypes.shape({
+          name: PropTypes.string.isRequired, // tag name is required and should be a string
+          color: PropTypes.string.isRequired, // tag color is required and should be a string
+      })
+  ).isRequired, // tags should be an array of objects with name and color fields
+  image: PropTypes.string.isRequired, // image should be a string (URL)
+  source_code_link: PropTypes.string.isRequired, // source_code_link should be a string (URL)
+};
 
 export default SectionWrapper(Works, "");

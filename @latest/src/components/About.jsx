@@ -5,6 +5,8 @@ import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import PropTypes from 'prop-types';
+
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -53,6 +55,12 @@ const About = () => {
       </motion.div>
     </>
   );
+};
+
+ServiceCard.propTypes = {
+  index: PropTypes.number.isRequired, // index is required and should be a number
+  title: PropTypes.string.isRequired, // title is required and should be a string
+  icon: PropTypes.string.isRequired, // icon should be a string (URL)
 };
 
 export default SectionWrapper(About, "about");
