@@ -1,12 +1,11 @@
-// BallCanvas.js
 import React, { Suspense, useEffect, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useTexture, Decal, Float } from "@react-three/drei";
 import PropTypes from "prop-types";
 import CanvasLoader from "../Loader";
 
-const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+const Ball = ({ imgUrl }) => {
+  const [decal] = useTexture([imgUrl]);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -40,21 +39,23 @@ const BallCanvas = ({ icon }) => {
   const canvasRef = useRef();
 
   useEffect(() => {
-    const canvasElement = canvasRef.current?.children[0];
-    const gl = canvasElement?.getContext('webgl');
+    const canvasElement = canvasRef.current?.children[0]; // Capture current ref value
+
+    let renderer;
+    if (canvasElement) {
+      renderer = canvasElement.getContext("webgl");
+    }
 
     return () => {
-      if (gl) {
-        const loseContext = gl.getExtension('WEBGL_lose_context');
-        if (loseContext) {
-          loseContext.loseContext();
-        }
+      if (renderer) {
+        renderer.forceContextLoss(); // Lose WebGL context
+        renderer.dispose(); // Dispose renderer
       }
       if (canvasElement) {
-        canvasElement.remove(); // Remove the canvas from the DOM
+        canvasElement.remove(); // Remove canvas from DOM
       }
     };
-  }, []);
+  }, []); // Empty dependency array ensures this runs only once
 
   return (
     <Canvas

@@ -83,7 +83,7 @@ const technologies = [
     //    icon: html,
     //},
     {
-        name: "PYTHON",
+        name: "Python",
         icon: python,
     },
     {
@@ -102,10 +102,10 @@ const technologies = [
         name: "Tailwind CSS",
         icon: tailwind,
     },
-    {
-        name: "TypeScript",
-        icon: typescript,
-    },
+    //{
+    //    name: "TypeScript",
+    //    icon: typescript,
+    //},
     {
         name: "Spring Boot",
         icon: java,
@@ -134,10 +134,10 @@ const technologies = [
         name: "TensorFlow",
         icon: tensorflow,
     },
-    {
-        name: "PyTorch",
-        icon: pytorch,
-    },
+    //{
+    //    name: "PyTorch",
+    //    icon: pytorch,
+    //},
     {
         name: "Microsoft Azure",
         icon: azure,
