@@ -8,6 +8,7 @@ import {
   //github,
   //menu,
   //close,
+  Messaging,
   cloud,
   css,
   postgresql,
@@ -41,6 +42,11 @@ import {
   //php,         // Add PHP to the export
   //arduino,     // Add Arduino to the export
   //esp32,
+  Deployments, 
+  Order, 
+  azureArchitecture, 
+  stock, 
+  JEE
 } from "../assets";
 
 export const navLinks = [
@@ -195,7 +201,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: mobile, // Replace with the actual project image
+        image: azureArchitecture, // Replace with the actual project image
         source_code_link: "https://github.com/",
     },
     {
@@ -216,7 +222,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: mobile, // Replace with the actual project image
+        image: JEE, // Replace with the actual project image
         source_code_link: "https://github.com/NibrasAmmar01/J2EE",
     },
     {
@@ -229,7 +235,7 @@ const projects = [
                 color: "blue-text-gradient",
             },
         ],
-        image: mobile, // Replace with the actual project image
+        image: stock, // Replace with the actual project image
         source_code_link: "https://github.com/achrefGT/TradingSimulator",
     },
    {
@@ -254,8 +260,66 @@ const projects = [
                 color: "blue-text-gradient",
             },
         ],
-        image: mobile, // Replace with the actual project image
-        source_code_link: "https://github.com/",
+        image: Order, // Replace with the actual project image
+        source_code_link: "https://github.com/RamziHaddad/projet-soa-ecommerce-enit-2024-3AINFO2",
+    },
+    {
+        name: "Microservices with Dapr and Kubernetes",
+        description:
+            "Developed a set of microservices using TypeScript, Vue.js, and .NET, communicating through Dapr for efficient service-to-service communication. The solution leverages Kubernetes for monitoring, scalability, and orchestration, with robust access control mechanisms to ensure secure and efficient operations across the system.",
+        tags: [
+            {
+                name: "TypeScript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Vue.js",
+                color: "green-text-gradient",
+            },
+            {
+                name: ".NET",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Dapr",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Kubernetes",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Access Control",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: Deployments, // Replace with the actual project image
+        source_code_link: "https://github.com/haroun08/Project-administration-r-seaux-et-services",
+    },
+    {
+        name: "Kafka Messaging App",
+        description:
+            "Built a real time messaging app based on Spring Boot for backend services with Kafka for message communication and Vite for the front-end. The application enables real-time communication with a scalable architecture using Kafka as the message broker.",
+        tags: [
+            {
+                name: "Spring Boot",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Kafka",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Vite",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "WebSocket",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: Messaging, // Replace with the actual project image
+        source_code_link: "https://github.com/NibrasAmmar01/Kafka-Messaging-App",
     },
 ];
 

@@ -7,6 +7,13 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import cloud from "./cloud.png";
+import Messaging from "./Messaging.jpg"
+import Deployments from "./Deployments.jpg"
+import Order from "./Order.jpg"
+import azureArchitecture from "./azureArchitecture.jpg"
+import stock from "./stock.jpg"
+import JEE from "./JEE.jpg"
+
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -33,7 +40,6 @@ import python from "./tech/python.jpg";        // Add a Python icon
 import php from "./tech/php.jpg";              // Add a PHP icon
 import arduino from "./tech/arduino.jpg";      // Add an Arduino icon
 import esp32 from "./tech/esp32.png";          // Add an ESP32 icon
-
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -86,4 +92,10 @@ export {
   php,         // Add PHP to the export
   arduino,     // Add Arduino to the export
   esp32,       // Add ESP32 to the export
+  Messaging, 
+  Deployments, 
+  Order, 
+  azureArchitecture, 
+  stock, 
+  JEE
 };
